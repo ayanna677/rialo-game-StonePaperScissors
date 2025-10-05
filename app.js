@@ -53,6 +53,13 @@ const playGame = (userChoice) => {
     }
     showWinner(userWin, userChoice, compChoice);
   }
+
+   // Animate logo
+  const logoContainer = document.querySelector(".logo-container");
+  logoContainer.classList.add("animate");
+  setTimeout(() => {
+    logoContainer.classList.remove("animate");
+  }, 300);
 };
 
 choices.forEach((choice) => {
