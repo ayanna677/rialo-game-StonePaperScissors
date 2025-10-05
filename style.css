@@ -66,3 +66,29 @@ img {
   padding: 1rem;
   border-radius: 1rem;
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.logo-container img {
+  width: 50px; /* adjust size if needed */
+  height: 50px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* add this here */
+}
+
+.logo-container span {
+  font-size: 2rem; /* matches your h1 size style */
+  font-weight: bold;
+  color: #081b31; /* same as your header bg color for contrast */
+}
+
+/* Animation for logo when clicked */
+.logo-container.animate img {
+  transform: scale(1.3); /* grows 30% */
+}
